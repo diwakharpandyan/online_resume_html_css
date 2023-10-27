@@ -10,7 +10,7 @@ html, body{
 }
 #main{
     display: flex;
-    height: 50%;
+    height: 70%;
 }
 #main div{
     flex: 1;
@@ -65,9 +65,7 @@ a{
     padding: 5px;
     font-family: 'Alegreya Sans', sans-serif;
 }
-#ed, #obj{
-    border-right: 1px solid black;
-}
+
 @media (max-width: 860px){
     #dp{
         width: 120px;
@@ -83,7 +81,7 @@ a{
     #main {
        display: block;
        font-size: 1rem;
-       height: 90%;
+       height: 75%;
        padding: 10px;
     }
     header{
