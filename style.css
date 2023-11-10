@@ -1,42 +1,68 @@
+
 *{
+   
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   
 }
 .container{
     display: grid;
-   
-    min-height: 100vh;
-    grid-template-rows: 40% 50% 10%;
-    grid-template-columns: 30% 35% 35%;
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2fr 0.5fr;
+    width: 100vw;
+    height: 100vh;
 }
-header, main, footer{
-    border: 1px solid black;
+header{
     display: flex;
-    
-    
+    flex-direction: row;
+    grid-column: span 3;
+    background-image: url(./assets/images/1102805-monochrome-Earth-symmetry-circle-lines-spider-Arachnid-material-shape-line-black-and-white-fractal-art-invertebrate-spider-web~2.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
-body{
-    margin: 0%;
+main{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    
 }
 footer{
     grid-column: span 3;
 }
-header{
-    grid-column: span 3;
-    background-image: url('./assets/images/1102805-monochrome-Earth-symmetry-circle-lines-spider-Arachnid-material-shape-line-black-and-white-fractal-art-invertebrate-spider-web~2.png');
-    background-size: cover;
-    background-position: center;
-}
 .dp{
     border-radius: 50%;
-    
 }
-h1, h2, .contact, .location{
+.contact-location, .dp-name-title{
     color: whitesmoke;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+   
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
+.obj, .education, .skills{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 
 
-   
+}
+li{
+    padding-bottom: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
