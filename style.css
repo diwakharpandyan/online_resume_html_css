@@ -47,6 +47,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
     
 }
 .obj, .education, .skills{
@@ -65,4 +66,29 @@ li{
 }
 a{
     text-decoration: none;
+}
+footer{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 820px) {
+    main{
+        display: block;
+        text-align: left;
+    }
+    .contact-location{
+        align-self: flex-end;
+        align-items: start;
+        font-size: small;
+        
+
+    }
+    .dp-name-title{
+        padding-bottom: 10px;
+        flex: 2;
+     
+    }
+   
 }
